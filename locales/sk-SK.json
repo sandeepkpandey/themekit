@@ -3,15 +3,15 @@
     "accessibility": {
       "skip_to_content": "Prejsť na obsah",
       "close_modal": "Zavrieť",
-      "refresh_page": "Výber bude mať za následok obnovenie celej stránky.",
-      "selection_help": "Ak chcete uskutočniť výber, stlačte medzerník a potom klávesy so šípkami.",
-      "unit_price_separator": "za",
-      "error": "Chyba",
       "link_messages": {
         "new_window": "Otvorí sa v novom okne.",
         "external": "Otvorí externú webovú lokalitu.",
         "new_window_and_external": "Otvorí externú webovú lokalitu v novom okne."
-      }
+      },
+      "refresh_page": "Výber bude mať za následok obnovenie celej stránky.",
+      "selection_help": "Ak chcete uskutočniť výber, stlačte medzerník a potom klávesy so šípkami.",
+      "unit_price_separator": "za",
+      "error": "Chyba"
     },
     "meta": {
       "tags": "Označené ako „{{ tags }}“",
@@ -36,7 +36,8 @@
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Tesne pred otvorením vám odošleme e-mail!",
       "admin_link_html": "Ste vlastníkom obchodu? <a href=\"\/admin\" class=\"text-link\">Prihláste sa tu<\/a>",
-      "password_link": "Prejsť s použitím hesla"
+      "password_link": "Prejsť s použitím hesla",
+      "powered_by_shopify_html": "Tento obchod bude používať technológiu {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Zdieľať",
@@ -50,10 +51,18 @@
     },
     "search": {
       "empty_search_message": "Vyhľadávacie pole nemôže byť prázdne",
+      "results_with_count": {
+        "one": "Pre výraz „{{ terms }}“ sa našiel {{ count }} výsledok",
+        "other": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}"
+      },
       "title": "Prehľadajte našu lokalitu",
       "placeholder": "Vyhľadať",
       "submit": "Odoslať",
       "close": "Zavrieť vyhľadávanie",
+      "heading": {
+        "one": "Výsledok vyhľadávania",
+        "other": "Výsledky vyhľadávania"
+      },
       "no_results": "Skúste skontrolovať pravopis alebo použite iné slová.",
       "search_for": "Vyhľadajte:",
       "products": "Produkty",
@@ -61,19 +70,7 @@
       "clear_search_term": "Vymazať hľadaný výraz",
       "number_of_results": "{{ result_number }} z {{ results_count }}",
       "number_of_results_found": "Našiel sa tento počet výsledkov: {{ results_count }}",
-      "one_result_found": "Našiel sa 1 výsledok",
-      "results_with_count": {
-        "one": "Pre výraz „{{ terms }}“ sa našiel {{ count }} výsledok",
-        "other": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}",
-        "few": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}",
-        "many": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}"
-      },
-      "heading": {
-        "one": "Výsledok vyhľadávania",
-        "other": "Výsledky vyhľadávania",
-        "few": "Výsledky vyhľadávania",
-        "many": "Výsledky vyhľadávania"
-      }
+      "one_result_found": "Našiel sa 1 výsledok"
     },
     "newsletter_form": {
       "newsletter_email": "Prihláste sa do nášho poštového zoznamu na odber správ",
@@ -122,9 +119,6 @@
       "pause": "Pozastaviť video {{ video_title }}",
       "resume": "Pokračovať vo videu {{ video_title }}",
       "close": "Zavrieť video {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Oznámenie"
     }
   },
   "blogs": {
@@ -139,10 +133,9 @@
       "back_to_blog": "Späť na {{ title }}",
       "tags": "Značky",
       "article_with_count": {
-        "one": "{{ count }} článok",
-        "other": "Počet článkov: {{ count }}",
-        "few": "Počet článkov: {{ count }}",
-        "many": "Počet článkov: {{ count }}"
+        "zero": "0 článkov",
+        "one": "1 článok",
+        "other": "Počet článkov: {{ count }}"
       }
     },
     "comments": {
@@ -157,9 +150,7 @@
       "unapproved": "Zadaná e-mailová adresa nie je schválená na uverejňovanie komentárov.",
       "comments_with_count": {
         "one": "{{ count }} komentár",
-        "other": "Počet komentárov: {{ count }}",
-        "few": "Počet komentárov: {{ count }}",
-        "many": "Počet komentárov: {{ count }}"
+        "other": "Počet komentárov: {{ count }}"
       }
     }
   },
@@ -197,15 +188,13 @@
     },
     "popup": {
       "added_to_cart": "Práve pridané do košíka",
-      "product_details": "Podrobnosti o produkte",
-      "quantity": "Množstvo",
-      "quantity_label": "Množstvo: {{ quantity_count }}",
       "cart_count": {
         "one": "{{ count }} položka",
-        "other": "Počet položiek: {{ count }}",
-        "few": "Počet položiek: {{ count }}",
-        "many": "Počet položiek: {{ count }}"
-      }
+        "other": "Počet položiek: {{ count }}"
+      },
+      "product_details": "Podrobnosti o produkte",
+      "quantity": "Množstvo",
+      "quantity_label": "Množstvo: {{ quantity_count }}"
     }
   },
   "collections": {
@@ -213,13 +202,11 @@
       "view_all": "Zobraziť všetko",
       "view_all_label": "Pozrite si všetky produkty z kolekcie {{ collection_name }}",
       "no_matches": "Ľutujeme, v tejto kolekcii nie sú žiadne produkty",
-      "collection_label": "Kolekcia",
       "items_with_count": {
         "one": "{{ count }} produkt",
-        "other": "Počet produktov: {{ count }}",
-        "few": "Počet produktov: {{ count }}",
-        "many": "Počet produktov: {{ count }}"
-      }
+        "other": "Počet produktov: {{ count }}"
+      },
+      "collection_label": "Kolekcia"
     },
     "catalog": {
       "title": "Katalóg"
@@ -370,9 +357,7 @@
       "title": "Košík",
       "items_count": {
         "one": "položka",
-        "other": "položky",
-        "few": "položky",
-        "many": "položky"
+        "other": "položky"
       }
     },
     "customer": {
@@ -422,16 +407,6 @@
       "remaining_html": "Zostáva {{ balance }}",
       "add_to_apple_wallet": "Pridať do aplikácie Apple Wallet",
       "qr_image_alt": "QR kód – naskenujte ho a uplatnite si darčekový poukaz"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Zobraziť informácie o obchode",
-      "check_other_stores": "Skontrolovať dostupnosť v iných obchodoch",
-      "pick_up_available": "K dispozícii na vyzdvihnutie",
-      "pick_up_currently_unavailable": "Aktuálne dostupné na vyzdvihnutie",
-      "pick_up_available_at_html": "K dispozícii na vyzdvihnutie na adrese <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Aktuálne dostupné na vyzdvihnutie na adrese <strong>{{ location_name }}<\/strong>"
     }
   }
 }

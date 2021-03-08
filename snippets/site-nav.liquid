@@ -27,7 +27,7 @@
           <span class="site-nav__label">{{ link.title | escape }}</span>{% include 'icon-chevron-down' %}
         </button>
 
-        <div class="site-nav__dropdown{% if three_level_nav %} site-nav__dropdown--centered{% endif %} critical-hidden" id="SiteNavLabel-{{ child_list_handle }}">
+        <div class="site-nav__dropdown{% if three_level_nav %} site-nav__dropdown--centered{% endif %}" id="SiteNavLabel-{{ child_list_handle }}">
           {% if three_level_nav %}
             <div class="site-nav__childlist">
               <ul class="site-nav__childlist-grid">

@@ -3,15 +3,15 @@
     "accessibility": {
       "skip_to_content": "Przejdź do treści",
       "close_modal": "Zamknij",
-      "refresh_page": "Zaznaczenie wyboru powoduje pełne odświeżenie strony.",
-      "selection_help": "Naciśnij klawisz spacji, a następnie klawisze strzałek, aby dokonać wyboru.",
-      "unit_price_separator": "za",
-      "error": "Błąd",
       "link_messages": {
         "new_window": "Otwiera się w nowym oknie.",
         "external": "Otwiera zewnętrzną stronę internetową.",
         "new_window_and_external": "Otwiera zewnętrzną stronę internetową w nowym oknie."
-      }
+      },
+      "refresh_page": "Zaznaczenie wyboru powoduje pełne odświeżenie strony.",
+      "selection_help": "Naciśnij klawisz spacji, a następnie klawisze strzałek, aby dokonać wyboru.",
+      "unit_price_separator": "za",
+      "error": "Błąd"
     },
     "meta": {
       "tags": "Oznaczone tagiem \"{{ tags }}\"",
@@ -36,7 +36,8 @@
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Wyślemy Ci wiadomość e-mail tuż przed otwarciem!",
       "admin_link_html": "Czy jesteś właścicielem sklepu? <a href=\"\/admin\" class=\"text-link\">Zaloguj się tutaj<\/a>",
-      "password_link": "Wejdź, wpisując hasło"
+      "password_link": "Wejdź, wpisując hasło",
+      "powered_by_shopify_html": "Ten sklep będzie obsługiwany przez {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Udostępnij",
@@ -54,6 +55,10 @@
       "placeholder": "Szukaj",
       "submit": "Zatwierdź",
       "close": "Zamknij wyszukiwanie",
+      "heading": {
+        "one": "Wynik wyszukiwania",
+        "other": "Wyniki wyszukiwania"
+      },
       "search_for": "Szukaj",
       "loading": "Ładowanie",
       "clear_search_term": "Wyczyść szukany termin",
@@ -62,17 +67,9 @@
       "number_of_results_found": "Liczba znalezionych wyników: {{ results_count }}",
       "one_result_found": "Znaleziono 1 wynik",
       "no_results": "Spróbuj sprawdzić pisownię lub użyj innych słów.",
-      "heading": {
-        "one": "Wynik wyszukiwania",
-        "other": "Wyniki wyszukiwania",
-        "few": "Wyniki wyszukiwania",
-        "many": "Wyniki wyszukiwania"
-      },
       "results_with_count": {
         "one": "{{ count }} wynik dla \"{{ terms }}\"",
-        "other": "{{ count }} wyniki(-ów) dla \"{{ terms }}\"",
-        "few": "{{ count }} wyniki(-ów) dla \"{{ terms }}\"",
-        "many": "{{ count }} wyniki(-ów) dla \"{{ terms }}\""
+        "other": "{{ count }} wyniki(-ów) dla \"{{ terms }}\""
       }
     },
     "newsletter_form": {
@@ -122,9 +119,6 @@
       "pause": "Zatrzymaj film {{ video_title }}",
       "resume": "Wznów film {{ video_title }}",
       "close": "Zamknij film {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Ogłoszenie"
     }
   },
   "blogs": {
@@ -139,10 +133,9 @@
       "back_to_blog": "Powrót do {{ title }}",
       "tags": "Tagi",
       "article_with_count": {
-        "one": "{{ count }} artykuł",
+        "one": "1 artykuł",
         "other": "{{ count }} artykuły(-ów)",
-        "few": "{{ count }} artykuły(-ów)",
-        "many": "{{ count }} artykuły(-ów)"
+        "zero": "0 artykułów"
       }
     },
     "comments": {
@@ -157,9 +150,7 @@
       "unapproved": "Podany adres e-mail nie jest zatwierdzony do publikowania komentarzy.",
       "comments_with_count": {
         "one": "{{ count }} komentarz",
-        "other": "Liczba komentarzy: {{ count }}",
-        "few": "Liczba komentarzy: {{ count }}",
-        "many": "Liczba komentarzy: {{ count }}"
+        "other": "Liczba komentarzy: {{ count }}"
       }
     }
   },
@@ -167,7 +158,7 @@
     "general": {
       "title": "Twój koszyk",
       "note": "Dodaj notatkę do swojego zamówienia",
-      "removed_item_html": "Usunięto <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> z Twojego koszyka.",
+      "removed_item_html": "Usunięto <span class=\"cart__removed-product-details\">{{ quantity }}<\/span>({{ quantity }}) z Twojego koszyka.",
       "remove": "Usuń",
       "subtotal": "Suma częściowa",
       "savings": "Oszczędzasz",
@@ -197,15 +188,13 @@
     },
     "popup": {
       "added_to_cart": "Dodano już do Twojego koszyka",
-      "product_details": "Szczegóły produktu",
-      "quantity": "Ilość",
-      "quantity_label": "Ilość: {{ quantity_count }}",
       "cart_count": {
         "one": "{{ count }} pozycja",
-        "other": "{{ count }} pozycji(-e)",
-        "few": "{{ count }} pozycji(-e)",
-        "many": "{{ count }} pozycji(-e)"
-      }
+        "other": "{{ count }} pozycji(-e)"
+      },
+      "product_details": "Szczegóły produktu",
+      "quantity": "Ilość",
+      "quantity_label": "Ilość: {{ quantity_count }}"
     }
   },
   "collections": {
@@ -213,13 +202,11 @@
       "view_all": "Wyświetl wszystkie",
       "view_all_label": "Wyświetl wszystkie produkty w kolekcji {{ collection_name }}",
       "no_matches": "Niestety, w tej kolekcji nie ma produktów",
-      "collection_label": "Kolekcja",
       "items_with_count": {
         "one": "Produkt: {{ count }}",
-        "other": "Liczba produktów: {{ count }}",
-        "few": "Liczba produktów: {{ count }}",
-        "many": "Liczba produktów: {{ count }}"
-      }
+        "other": "Liczba produktów: {{ count }}"
+      },
+      "collection_label": "Kolekcja"
     },
     "catalog": {
       "title": "Katalog"
@@ -370,9 +357,7 @@
       "title": "Koszyk",
       "items_count": {
         "one": "pozycję",
-        "other": "pozycje",
-        "few": "pozycje",
-        "many": "pozycje"
+        "other": "pozycje"
       }
     },
     "customer": {
@@ -387,7 +372,7 @@
   },
   "products": {
     "product": {
-      "regular_price": "Cena regularna",
+      "regular_price": "Zwykła cena",
       "sold_out": "Wyprzedane",
       "unavailable": "Niedostępne",
       "on_sale": "Sprzedaż",
@@ -422,16 +407,6 @@
       "remaining_html": "{{ balance }} lewo",
       "add_to_apple_wallet": "Dodaj do Apple Wallet",
       "qr_image_alt": "Kod QR — zeskanuj, aby wykorzystać kartę prezentową"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Pokaż informacje o sklepie",
-      "check_other_stores": "Sprawdź dostępność w innych sklepach",
-      "pick_up_available": "Odbiór jest możliwy",
-      "pick_up_currently_unavailable": "Odbiór jest obecnie niemożliwy",
-      "pick_up_available_at_html": "Odbiór możliwy w <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Odbiór w <strong>{{ location_name }}<\/strong> jest obecnie niemożliwy"
     }
   }
 }

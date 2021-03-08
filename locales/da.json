@@ -36,7 +36,8 @@
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Vi sender en e-mail til dig, lige inden vi åbner.",
       "admin_link_html": "Ejer du butikken? <a href=\"\/admin\" class=\"text-link\">Log ind her<\/a>",
-      "password_link": "Brug adgangskode for at få adgang"
+      "password_link": "Brug adgangskode for at få adgang",
+      "powered_by_shopify_html": "Denne butik vil blive drevet af {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Del",
@@ -73,7 +74,7 @@
     },
     "newsletter_form": {
       "newsletter_email": "Tilmeld dig vores adresseliste",
-      "email_placeholder": "Mailadresse",
+      "email_placeholder": "E-mailadresse",
       "confirmation": "Tak for dit abonnement.",
       "submit": "Abonnér"
     },
@@ -118,9 +119,6 @@
       "pause": "Sæt videoen {{ video_title }} på pause",
       "resume": "Genoptag afspilning af videoen {{ video_title }}",
       "close": "Luk videoen {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Meddelelse"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "Tilbage til {{ title }}",
       "tags": "Tags",
       "article_with_count": {
-        "one": "{{ count }} artikel",
-        "other": "{{ count }} artikler"
+        "one": "1 artikel",
+        "other": "{{ count }} artikler",
+        "zero": "0 artikler"
       }
     },
     "comments": {
@@ -148,7 +147,7 @@
       "moderated": "Bemærk, at kommentarer skal godkendes, før de bliver offentliggjort",
       "success_moderated": "Din kommentar er blevet opslået. Den bliver offentliggjort om lidt, da vores blog er under opsyn.",
       "success": "Din kommentar er blevet opslået. Tak!",
-      "unapproved": "Den angivne mailadresse er ikke godkendt til at opslå kommentarer.",
+      "unapproved": "Den angivne e-mailadresse er ikke godkendt til at opslå kommentarer.",
       "comments_with_count": {
         "one": "{{ count }} kommentar",
         "other": "{{ count }} kommentarer"
@@ -408,16 +407,6 @@
       "remaining_html": "{{ balance }} tilbage",
       "add_to_apple_wallet": "Tilføj til Apple Wallet",
       "qr_image_alt": "QR-kode — scan for at indløse gavekort"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Se butiksoplysninger",
-      "check_other_stores": "Kontrollér tilgængelighed i andre butikker",
-      "pick_up_available": "Afhentning er tilgængeligt",
-      "pick_up_currently_unavailable": "Afhentning er ikke tilgængeligt i øjeblikket",
-      "pick_up_available_at_html": "Afhentning er tilgængelig for <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Afhentning er ikke tilgængelig for <strong>{{ location_name }}<\/strong> i øjeblikket"
     }
   }
 }

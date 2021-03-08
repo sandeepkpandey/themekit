@@ -36,7 +36,8 @@
       "signup_form_email_label": "Email",
       "signup_form_success": "Kami akan mengirimimu email tepat sebelum kami akan buka!",
       "admin_link_html": "Anda pemilik toko? <a href=\"\/admin\" class=\"text-link\">Login di sini<\/a>",
-      "password_link": "Masuk dengan sandi"
+      "password_link": "Masuk dengan sandi",
+      "powered_by_shopify_html": "Toko ini didukung oleh {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Bagikan",
@@ -118,9 +119,6 @@
       "pause": "Jeda video {{ video_title }}",
       "resume": "Lanjutkan video {{ video_title }}",
       "close": "Tutup video {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Pengumuman"
     }
   },
   "blogs": {
@@ -135,7 +133,8 @@
       "back_to_blog": "Kembali ke {{ title }}",
       "tags": "Tanda",
       "article_with_count": {
-        "one": "{{ count }} artikel",
+        "zero": "0 artikel",
+        "one": "1 artikel",
         "other": "{{ count }} artikel"
       }
     },
@@ -408,16 +407,6 @@
       "remaining_html": "Tersisa {{ balance }}",
       "add_to_apple_wallet": "Tambahkan ke Apple Wallet",
       "qr_image_alt": "Kode QR — pindai untuk menukarkan voucher"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Lihat informasi toko",
-      "check_other_stores": "Periksa ketersediaan di toko lainnya",
-      "pick_up_available": "Pengambilan tersedia",
-      "pick_up_currently_unavailable": "Pengambilan saat ini tersedia",
-      "pick_up_available_at_html": "Dapat diambil di <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Tidak dapat diambil di <strong>{{ location_name }}<\/strong>"
     }
   }
 }

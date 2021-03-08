@@ -36,7 +36,8 @@
       "signup_form_email_label": "อีเมล",
       "signup_form_success": "เราจะส่งอีเมลแจ้งคุณก่อนที่ร้านจะเปิด!",
       "admin_link_html": "คุณเป็นเจ้าของร้านใช่ไหม <a href=\"\/admin\" class=\"text-link\">เข้าสู่ระบบที่นี่<\/a>",
-      "password_link": "เข้าโดยใช้รหัสผ่าน"
+      "password_link": "เข้าโดยใช้รหัสผ่าน",
+      "powered_by_shopify_html": "ร้านค้านี้จะได้รับการสนับสนุนจาก {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "แชร์",
@@ -118,9 +119,6 @@
       "pause": "หยุดวิดีโอ {{ video_title }}",
       "resume": "เล่นวิดีโอ {{ video_title }} ต่อ",
       "close": "ปิดวิดีโอ {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "การประกาศ"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "กลับไปยัง {{ title }}",
       "tags": "แท็ก",
       "article_with_count": {
-        "one": "{{ count }} บทความ",
-        "other": "{{ count }} บทความ"
+        "one": "1 บทความ",
+        "other": "{{ count }} บทความ",
+        "zero": "0 บทความ"
       }
     },
     "comments": {
@@ -408,16 +407,6 @@
       "remaining_html": "เหลือเงิน {{ balance }}",
       "add_to_apple_wallet": "เพิ่มลงใน Apple Wallet",
       "qr_image_alt": "คิวอาร์โค้ด — สแกนเพื่อแลกใช้บัตรของขวัญ"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "ดูข้อมูลร้านค้า",
-      "check_other_stores": "ตรวจสอบความพร้อมที่ร้านค้าอื่นๆ",
-      "pick_up_available": "การรับสินค้าด้วยตนเองพร้อมให้บริการ",
-      "pick_up_currently_unavailable": "การรับสินค้าด้วยตนเองไม่พร้อมให้บริการในขณะนี้",
-      "pick_up_available_at_html": "การรับสินค้าด้วยตนเองพร้อมให้บริการที่ <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "การรับสินค้าด้วยตนเองไม่พร้อมให้บริการที่ <strong>{{ location_name }}<\/strong> ในขณะนี้"
     }
   }
 }

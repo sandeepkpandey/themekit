@@ -36,7 +36,8 @@
       "signup_form_email_label": "メール",
       "signup_form_success": "ストアがオープンする直前にメールでお知らせします！",
       "admin_link_html": "あなたはストアのオーナーですか？<a href=\"\/admin\" class=\"text-link\">こちらからログインする<\/a>",
-      "password_link": "パスワードを入力してください"
+      "password_link": "パスワードを入力してください",
+      "powered_by_shopify_html": "このお店は{{ shopify }}を使用しています"
     },
     "social": {
       "share_on_facebook": "シェア",
@@ -78,7 +79,7 @@
       "submit": "登録する"
     },
     "filters": {
-      "show_more": "さらに表示する",
+      "show_more": "表示を増やす",
       "show_less": "表示を減らす"
     },
     "payment": {
@@ -118,9 +119,6 @@
       "pause": "{{ video_title }}ビデオを一時停止する",
       "resume": "{{ video_title }}ビデオを再開する",
       "close": "{{ video_title }}ビデオを閉じる"
-    },
-    "header": {
-      "announcement_bar_label": "告知"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "{{ title }}に戻る",
       "tags": "タグ",
       "article_with_count": {
-        "one": "記事{{ count }}件",
-        "other": "記事{{ count }}件"
+        "one": "記事1件",
+        "other": "記事{{ count }}件",
+        "zero": "記事0件"
       }
     },
     "comments": {
@@ -172,7 +171,7 @@
       "empty": "カート内に商品がありません。",
       "cookies_required": "カートを使うためにCookieを有効にする",
       "continue_shopping": "買い物を続ける",
-      "cart_error": "お客様のカートをアップデートするときにエラーが発生しました。再度お試しください。"
+      "cart_error": "あなたのカートをアップデートするときにエラーが発生しました。再度お試しください。"
     },
     "label": {
       "discounted_total": "ディスカウント合計",
@@ -284,7 +283,7 @@
       "order_number_link": "注文番号 {{ number }}",
       "date": "日付",
       "payment_status": "お支払い状況",
-      "fulfillment_status": "配送状況",
+      "fulfillment_status": "フルフィルメントの状況",
       "total": "合計",
       "none": "まだ注文を確定していません。"
     },
@@ -296,7 +295,7 @@
       "billing_address": "請求先住所",
       "payment_status": "お支払いの状況",
       "shipping_address": "配送先住所",
-      "fulfillment_status": "配送状況",
+      "fulfillment_status": "フルフィルメントの状況",
       "discount": "ディスカウント",
       "shipping": "送料",
       "tax": "税",
@@ -305,7 +304,7 @@
       "price": "価格",
       "quantity": "個数",
       "total": "合計",
-      "fulfilled_at_html": "発送日 {{ date }}",
+      "fulfilled_at_html": "フルフィルメントされた日付 {{ date }}",
       "subtotal": "小計",
       "track_shipment": "荷物を追跡"
     },
@@ -315,7 +314,7 @@
       "submit": "送信する",
       "cancel": "キャンセル",
       "subtext": "パスワードをリセットするためのメールを送ります。",
-      "success": "パスワードを更新するためのメールを送信しました。"
+      "success": "パスワードをアップデートするためのメールを送信しました。"
     },
     "reset_password": {
       "title": "アカウントのパスワードをリセットする",
@@ -402,22 +401,12 @@
       "disabled": "無効",
       "expired": "{{ expiry }}で有効期限が切れました",
       "active": "{{ expiry }}で有効期限が切れます",
-      "redeem_html": "{{ value }}のギフトカードを引き換えるために、このコードをチェックアウトで使用する",
+      "redeem_html": "{{ value }}のギフトカードで商品を買うために、このコードをチェックアウトで使用する",
       "shop_link": "買い物を始める",
       "print": "このギフトカードを印刷する",
       "remaining_html": "残り{{ balance }}使用可能です",
       "add_to_apple_wallet": "Apple Walletに追加する",
       "qr_image_alt": "QRコード - スキャンしてギフトカードを引き換える"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "ストア情報を表示する",
-      "check_other_stores": "別のストアでの出品状況を確認する",
-      "pick_up_available": "受取が可能です",
-      "pick_up_currently_unavailable": "受取は現在できません",
-      "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong>での受取が可能です",
-      "pick_up_unavailable_at_html": "<strong>{{ location_name }}<\/strong>での受取は現在できません"
     }
   }
 }

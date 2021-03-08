@@ -7,7 +7,7 @@
       <div class="blog-filter">
         <label class="blog-filter__label select-label" for="BlogTagFilter">{{ 'collections.filters.title_tags' | t }}</label>
         <div class="select-group">
-          <select id="BlogTagFilter" aria-describedby="a11y-refresh-page-message a11y-selection-message" data-blog-tag-filter>
+          <select id="BlogTagFilter" aria-describedby="a11y-refresh-page-message a11y-selection-message">
             <option value="{{ blog.url }}">{{ 'blogs.article.all_topics' | t }}</option>
             {% for tag in blog.all_tags %}
               <option value="{{ blog.url }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag }}</option>
@@ -34,9 +34,10 @@
 
               {% include 'image-style', image: article.image, height: 345, wrapper_id: img_wrapper_id, img_id: img_id %}
               <div id="{{ img_wrapper_id }}" class="article__grid-image-wrapper js">
-                <div class="article__grid-image-container" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;" data-image-loading-animation>
+                <div class="article__grid-image-container" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;">
                   <img id="{{ img_id }}"
                       class="article__grid-image lazyload"
+                      src="{{ article.image | img_url: '300x300' }}"
                       data-src="{{ img_url }}"
                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                       data-aspectratio="{{ article.image.aspect_ratio }}"
@@ -134,9 +135,10 @@
                   {% include 'image-style', image: article.image, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
 
                   <div id="{{ img_wrapper_id }}" class="article__list-image-wrapper js">
-                    <a href="{{ article.url }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;" class="article__list-image-container" data-image-loading-animation>
+                    <a href="{{ article.url }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;" class="article__list-image-container">
                       <img id="{{ img_id }}"
                            class="article__list-image lazyload"
+                           src="{{ article.image | img_url: '300x300' }}"
                            data-src="{{ img_url }}"
                            data-widths="[180, 360, 540, 720, 905, 1090, 1296, 1512, 1728, 2048]"
                            data-aspectratio="{{ article.image.aspect_ratio }}"
@@ -199,32 +201,29 @@
   {% include 'pagination', paginate: paginate %}
 {%- endif -%}
 
-{% endpaginate %}
+{% assign sp_paginate_by = paginate.page_size %}{% endpaginate %}
 
 
 
-{% schema %}
+{% if sp_paginate_by %}{% render 'spurit_po2_collection_template_snippet', paginate_by: sp_paginate_by %}{% endif %}{% schema %}
 {
   "name": {
-    "cs": "Stránky blogu",
     "da": "Blogsider",
     "de": "Blogseiten",
     "en": "Blog pages",
     "es": "Páginas del blog",
     "fi": "Blogisivut",
     "fr": "Pages du blog",
+    "hi": "ब्लॉग पेज",
     "it": "Pagine del blog",
     "ja": "ブログページ",
     "ko": "블로그 페이지",
     "nb": "Bloggsider",
     "nl": "Blogpagina's",
-    "pl": "Strony blogu",
     "pt-BR": "Páginas do blog",
     "pt-PT": "Páginas do blogue",
     "sv": "Bloggsidor",
     "th": "หน้าบล็อก",
-    "tr": "Blog sayfaları",
-    "vi": "Trang blog",
     "zh-CN": "博客页面",
     "zh-TW": "部落格頁面"
   },
@@ -233,25 +232,22 @@
       "type": "select",
       "id": "layout",
       "label": {
-        "cs": "Rozvržení",
         "da": "Layout",
         "de": "Layout",
         "en": "Layout",
         "es": "Diseño",
         "fi": "Asettelu",
         "fr": "Mise en page",
+        "hi": "लेआउट",
         "it": "Layout",
         "ja": "レイアウト",
         "ko": "레이아웃",
         "nb": "Oppsett",
         "nl": "Opmaak",
-        "pl": "Układ",
         "pt-BR": "Layout",
         "pt-PT": "Esquema",
         "sv": "Layout",
         "th": "เลย์เอาต์",
-        "tr": "Düzen",
-        "vi": "Bố cục",
         "zh-CN": "布局",
         "zh-TW": "版面配置"
       },
@@ -260,25 +256,22 @@
         {
           "value": "grid",
           "label": {
-            "cs": "Mřížka",
             "da": "Gitter",
             "de": "Raster",
             "en": "Grid",
             "es": "Cuadrícula",
             "fi": "Ruudukko",
             "fr": "Grille",
+            "hi": "ग्रिड",
             "it": "Griglia",
             "ja": "グリッド",
             "ko": "그리드",
             "nb": "Rutenett",
             "nl": "Raster",
-            "pl": "Siatka",
             "pt-BR": "Grade",
             "pt-PT": "Grelha",
             "sv": "Rutnät",
             "th": "กริด",
-            "tr": "Izgara",
-            "vi": "Lưới",
             "zh-CN": "网格",
             "zh-TW": "網格"
           }
@@ -286,25 +279,22 @@
         {
           "value": "list",
           "label": {
-            "cs": "Seznam",
             "da": "Liste",
             "de": "Liste",
             "en": "List",
             "es": "Lista",
             "fi": "Luettelo",
             "fr": "Liste",
+            "hi": "सूची",
             "it": "Elenco",
             "ja": "リスト",
             "ko": "목록",
             "nb": "Liste",
             "nl": "Lijst",
-            "pl": "Lista",
             "pt-BR": "Lista",
             "pt-PT": "Lista",
             "sv": "Lista",
             "th": "รายการ",
-            "tr": "Liste",
-            "vi": "Danh sách",
             "zh-CN": "列表",
             "zh-TW": "清單"
           }
@@ -315,25 +305,22 @@
       "type": "checkbox",
       "id": "blog_show_author",
       "label": {
-        "cs": "Zobrazit autora",
         "da": "Vis forfatter",
         "de": "Autor anzeigen",
         "en": "Show author",
         "es": "Mostrar autor",
         "fi": "Näytä tekijä",
         "fr": "Afficher l'auteur",
+        "hi": "लेखक दिखाएं",
         "it": "Mostra autore",
         "ja": "執筆者を表示する",
         "ko": "작성자 표시",
         "nb": "Vis forfatter",
         "nl": "Auteur weergeven",
-        "pl": "Pokaż autora",
         "pt-BR": "Exibir autor",
         "pt-PT": "Mostrar autor",
         "sv": "Visa författare",
         "th": "แสดงผู้เขียน",
-        "tr": "Yazarı göster",
-        "vi": "Hiển thị tác giả",
         "zh-CN": "显示作者",
         "zh-TW": "顯示作者"
       },
@@ -343,25 +330,22 @@
       "type": "checkbox",
       "id": "blog_show_date",
       "label": {
-        "cs": "Zobrazit datum",
         "da": "Vis dato",
         "de": "Datum anzeigen",
         "en": "Show date",
         "es": "Mostrar fecha",
         "fi": "Näytä päivämäärä",
         "fr": "Afficher la date",
+        "hi": "दिनांक दिखाएं",
         "it": "Mostra data",
         "ja": "日付を表示する",
         "ko": "날짜 표시",
         "nb": "Vis dato",
         "nl": "Datum weergeven",
-        "pl": "Pokaż datę",
         "pt-BR": "Exibir data",
         "pt-PT": "Mostrar data",
         "sv": "Visa datum",
         "th": "แสดงวันที่",
-        "tr": "Tarihi göster",
-        "vi": "Hiển thị ngày",
         "zh-CN": "显示日期",
         "zh-TW": "顯示日期"
       },

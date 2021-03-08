@@ -3,15 +3,15 @@
     "accessibility": {
       "skip_to_content": "Přeskočit na obsah",
       "close_modal": "Zavřít",
-      "refresh_page": "Po výběru volby se provede obnovení celé stránky.",
-      "selection_help": "Výběr provedete mezerníkem a potom šipkami.",
-      "unit_price_separator": "za",
-      "error": "Chyba",
       "link_messages": {
         "new_window": "Otevře se v novém okně.",
         "external": "Otevře externí webovou stránku.",
         "new_window_and_external": "Otevře externí webovou stránku v novém okně."
-      }
+      },
+      "refresh_page": "Po výběru volby se provede obnovení celé stránky.",
+      "selection_help": "Výběr provedete mezerníkem a potom šipkami.",
+      "unit_price_separator": "za",
+      "error": "Chyba"
     },
     "meta": {
       "tags": "Označeno „{{ tags }}“",
@@ -36,7 +36,8 @@
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Těsně než otevřeme, pošleme vám e-mail!",
       "admin_link_html": "Jste majitelem obchodu? <a href=\"\/admin\" class=\"text-link\">Přihlaste se zde<\/a>",
-      "password_link": "Vstoupit pomocí hesla"
+      "password_link": "Vstoupit pomocí hesla",
+      "powered_by_shopify_html": "Tento obchod poběží na platformě {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Sdílet",
@@ -54,6 +55,10 @@
       "placeholder": "Hledat",
       "submit": "Odeslat",
       "close": "Zavřít hledání",
+      "heading": {
+        "one": "Výsledek hledání",
+        "other": "Výsledky hledání"
+      },
       "search_for": "Vyhledat:",
       "loading": "Načítání",
       "clear_search_term": "Vymazat hledaný termín",
@@ -62,17 +67,9 @@
       "number_of_results_found": "Počet nalezených výsledků: {{ results_count }}",
       "one_result_found": "Počet nalezených výsledků: 1",
       "no_results": "Zkuste zkontrolovat pravopis nebo použít jiná slova.",
-      "heading": {
-        "one": "Výsledek hledání",
-        "other": "Výsledky hledání",
-        "few": "Výsledky hledání",
-        "many": "Výsledky hledání"
-      },
       "results_with_count": {
         "one": "{{ count }} výsledek pro hledání {{ terms }}",
-        "other": "Počet výsledků pro hledání {{ terms }}: {{ count }}",
-        "few": "Počet výsledků pro hledání {{ terms }}: {{ count }}",
-        "many": "Počet výsledků pro hledání {{ terms }}: {{ count }}"
+        "other": "Počet výsledků pro hledání {{ terms }}: {{ count }}"
       }
     },
     "newsletter_form": {
@@ -122,9 +119,6 @@
       "pause": "Pozastavit video {{ video_title }}",
       "resume": "Pokračovat v přehrávání videa {{ video_title }}",
       "close": "Zavřít video {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Oznámení"
     }
   },
   "blogs": {
@@ -139,10 +133,9 @@
       "back_to_blog": "Zpět do {{ title }}",
       "tags": "Štítky",
       "article_with_count": {
-        "one": "{{ count }} článek",
+        "one": "1 článek",
         "other": "Počet článků: {{ count }}",
-        "few": "Počet článků: {{ count }}",
-        "many": "Počet článků: {{ count }}"
+        "zero": "0 článků"
       }
     },
     "comments": {
@@ -157,9 +150,7 @@
       "unapproved": "Zadaná e-mailová adresa nemá schválení pro zveřejňování komentářů.",
       "comments_with_count": {
         "one": "{{ count }} komentář",
-        "other": "Komentáře (celkem {{ count }})",
-        "few": "Komentáře (celkem {{ count }})",
-        "many": "Komentáře (celkem {{ count }})"
+        "other": "Komentáře (celkem {{ count }})"
       }
     }
   },
@@ -197,15 +188,13 @@
     },
     "popup": {
       "added_to_cart": "Přidáno do košíku",
-      "product_details": "Údaje o produktu",
-      "quantity": "Množství",
-      "quantity_label": "Množství: {{ quantity_count }}",
       "cart_count": {
         "one": "{{ count }} položka",
-        "other": "{{ count }} položek",
-        "few": "{{ count }} položek",
-        "many": "{{ count }} položek"
-      }
+        "other": "{{ count }} položek"
+      },
+      "product_details": "Údaje o produktu",
+      "quantity": "Množství",
+      "quantity_label": "Množství: {{ quantity_count }}"
     }
   },
   "collections": {
@@ -213,13 +202,11 @@
       "view_all": "Zobrazit vše",
       "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}",
       "no_matches": "Je nám líto, v této kolekci nejsou žádné produkty",
-      "collection_label": "Kolekce",
       "items_with_count": {
         "one": "Produkty: {{ count }}",
-        "other": "Produkty: {{ count }}",
-        "few": "Produkty: {{ count }}",
-        "many": "Produkty: {{ count }}"
-      }
+        "other": "Produkty: {{ count }}"
+      },
+      "collection_label": "Kolekce"
     },
     "catalog": {
       "title": "Katalog"
@@ -370,9 +357,7 @@
       "title": "Košík",
       "items_count": {
         "one": "položka",
-        "other": "položek",
-        "few": "položek",
-        "many": "položek"
+        "other": "položek"
       }
     },
     "customer": {
@@ -422,16 +407,6 @@
       "remaining_html": "{{ balance }} zbývá",
       "add_to_apple_wallet": "Přidat do Apple Wallet",
       "qr_image_alt": "QR kód — naskenováním uplatníte svou dárkovou kartu"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Zobrazit informace o obchodě",
-      "check_other_stores": "Zkontrolovat dostupnost v ostatních obchodech",
-      "pick_up_available": "Vyzvednutí k dispozici",
-      "pick_up_currently_unavailable": "Vyzvednutí není momentálně k dispozici",
-      "pick_up_available_at_html": "Vyzvednutí k dispozici v lokalitě <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Vyzvednutí není momentálně v lokalitě <strong>{{ location_name }}<\/strong> k dispozici"
     }
   }
 }

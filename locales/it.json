@@ -36,7 +36,8 @@
       "signup_form_email_label": "Email",
       "signup_form_success": "Ti invieremo un'email appena prima di aprire!",
       "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"text-link\">Accedi qui<\/a>",
-      "password_link": "Accedi usando la password"
+      "password_link": "Accedi usando la password",
+      "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Condividi",
@@ -118,9 +119,6 @@
       "pause": "Metti in pausa il video {{ video_title }}",
       "resume": "Riprendi il video {{ video_title }}",
       "close": "Chiudi il video {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Annuncio"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "Torna a {{ title }}",
       "tags": "Tag",
       "article_with_count": {
-        "one": "{{ count }} articolo",
-        "other": "{{ count }} articoli"
+        "one": "1 articolo",
+        "other": "{{ count }} articoli",
+        "zero": "0 articoli"
       }
     },
     "comments": {
@@ -408,16 +407,6 @@
       "remaining_html": "{{ balance }} rimasti",
       "add_to_apple_wallet": "Aggiungi a Apple Wallet",
       "qr_image_alt": "Codice QR: scansiona per riscattare la carta regalo"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Visualizza i dettagli del negozio",
-      "check_other_stores": "Verifica la disponibilità in altri negozi",
-      "pick_up_available": "Ritiro disponibile",
-      "pick_up_currently_unavailable": "Ritiro attualmente non disponibile",
-      "pick_up_available_at_html": "Ritiro disponibile presso <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Ritiro presso <strong>{{ location_name }}<\/strong> attualmente non disponibile"
     }
   }
 }

@@ -36,7 +36,8 @@
       "signup_form_email_label": "電子郵件",
       "signup_form_success": "我們會在即將開張前寄電子郵件通知您！",
       "admin_link_html": "您是店主嗎？<a href=\"\/admin\" class=\"text-link\">請在此登入<\/a>",
-      "password_link": "以密碼進入"
+      "password_link": "以密碼進入",
+      "powered_by_shopify_html": "本商店由 {{ shopify }} 提供技術支援"
     },
     "social": {
       "share_on_facebook": "分享",
@@ -118,9 +119,6 @@
       "pause": "暫停播放 {{ video_title }} 影片",
       "resume": "繼續播放 {{ video_title }} 影片",
       "close": "關閉 {{ video_title }} 影片"
-    },
-    "header": {
-      "announcement_bar_label": "公告"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "返回 {{ title }}",
       "tags": "標籤",
       "article_with_count": {
-        "one": "{{ count }} 篇文章",
-        "other": "{{ count }} 篇文章"
+        "one": "1 篇文章",
+        "other": "{{ count }} 篇文章",
+        "zero": "0 篇文章"
       }
     },
     "comments": {
@@ -408,16 +407,6 @@
       "remaining_html": "尚餘 {{ balance }}",
       "add_to_apple_wallet": "加入 Apple Wallet",
       "qr_image_alt": "QR 條碼 — 掃描以兌換禮品卡"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "檢視商店資訊",
-      "check_other_stores": "查看其他商店的可用性",
-      "pick_up_available": "可提供取貨服務",
-      "pick_up_currently_unavailable": "目前無法提供取貨服務",
-      "pick_up_available_at_html": "可提供 <strong>{{ location_name }}<\/strong> 的取貨服務",
-      "pick_up_unavailable_at_html": "目前無法提供 <strong>{{ location_name }}<\/strong> 的取貨服務"
     }
   }
 }

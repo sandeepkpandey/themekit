@@ -59,7 +59,8 @@
       "signup_form_email_label": "Имейл",
       "signup_form_success": "Ще ви изпратим имейл точно преди да отворим.",
       "admin_link_html": "Вие ли сте собственикът на магазина? <a href=\"\/admin\" class=\"text-link\">Влезте тук<\/a>",
-      "password_link": "Влизане с парола"
+      "password_link": "Влизане с парола",
+      "powered_by_shopify_html": "Този магазин ще се поддържа от {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Споделяне",
@@ -141,9 +142,6 @@
       "pause": "Пауза на видеоклип {{ video_title }}",
       "resume": "Възобновяване на видеоклип {{ video_title }}",
       "close": "Затваряне на видеоклип {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Известие"
     }
   },
   "blogs": {
@@ -158,7 +156,8 @@
       "back_to_blog": "Назад към {{ title }}",
       "tags": "Етикети",
       "article_with_count": {
-        "one": "{{ count }} артикул",
+        "zero": "0 артикула",
+        "one": "1 артикул",
         "other": "{{ count }} артикула"
       }
     },
@@ -408,16 +407,6 @@
       "remaining_html": "Оставаща стойност: {{ balance }}",
       "add_to_apple_wallet": "Добавяне към Apple Wallet",
       "qr_image_alt": "QR код – сканирайте го, зада използвате ваучера за подарък"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Вижте информация за магазина",
-      "check_other_stores": "Проверка за наличност в други магазини",
-      "pick_up_available": "Възможност за взимане",
-      "pick_up_currently_unavailable": "В момента няма възможност за взимане",
-      "pick_up_available_at_html": "Възможност за взимане от <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "В момента няма възможност за взимане от <strong>{{ location_name }}<\/strong>"
     }
   }
 }

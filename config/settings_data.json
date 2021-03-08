@@ -1,35 +1,124 @@
 {
   "current": {
+    "color_text": "#3a3a3a",
+    "color_body_text": "#333232",
+    "color_sale_text": "#fa4545",
+    "color_button": "#3a3a3a",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#3a3a3a",
+    "color_text_field_text": "#000000",
+    "color_text_field_border": "#cccccc",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#685858",
+    "image_overlay_opacity": 40,
+    "color_borders": "#ebebeb",
+    "color_body_bg": "#ffffff",
+    "type_header_font": "helvetica_n7",
+    "type_header_base_size": 26,
+    "type_base_font": "helvetica_n4",
+    "type_base_size": 15,
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "enable_ajax": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
     "sections": {
       "header": {
         "type": "header",
-        "settings": {}
+        "settings": {
+          "align_logo": "left",
+          "logo_max_width": 100,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff"
+        }
       },
       "hero-1": {
         "type": "hero",
         "settings": {
+          "product_n": "",
+          "image": "shopify:\/\/shop_images\/working-at-night.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
           "hero_size": "large",
-          "text_size": "large"
+          "text_size": "large",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": ""
         }
       },
       "feature-row": {
         "type": "feature-row",
-        "settings": {}
+        "settings": {
+          "image": "shopify:\/\/shop_images\/hands-typing.jpg",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": ""
+        }
       },
       "feature-columns": {
         "type": "feature-columns",
         "blocks": {
           "feature-columns-0": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/macbook-air-on-desk.jpg",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
           },
           "feature-columns-1": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/business-woman-with-laptop.jpg",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
           },
           "feature-columns-2": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/startup-desk.jpg",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
           }
         },
         "block_order": [
@@ -38,19 +127,34 @@
           "feature-columns-2"
         ],
         "settings": {
-          "title": ""
+          "title": "About Us",
+          "align_text": "left"
         }
       },
       "collection": {
         "type": "collection",
+        "disabled": true,
         "settings": {
-          "grid": 4
+          "title": "Featured collection",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
         }
       },
       "hero-2": {
         "type": "hero",
         "settings": {
-          "text_size": "large"
+          "product_n": "checked-blazer",
+          "image": "shopify:\/\/shop_images\/woman-relaxed-work.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "large",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": ""
         }
       },
       "quotes": {
@@ -58,15 +162,24 @@
         "blocks": {
           "quotes-0": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
           },
           "quotes-1": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
           },
           "quotes-2": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
           }
         },
         "block_order": [
@@ -75,7 +188,7 @@
           "quotes-2"
         ],
         "settings": {
-          "title": ""
+          "title": "Reviews"
         }
       },
       "image-bar": {
@@ -83,15 +196,27 @@
         "blocks": {
           "image-bar-0": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify:\/\/shop_images\/man-working-from-home.jpg",
+              "alignment": "center",
+              "cta_label": ""
+            }
           },
           "image-bar-1": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify:\/\/shop_images\/woman-in-motivational-office.jpg",
+              "alignment": "center",
+              "cta_label": ""
+            }
           },
           "image-bar-2": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify:\/\/shop_images\/woman-works-on-computer-at-home.jpg",
+              "alignment": "center",
+              "cta_label": ""
+            }
           }
         },
         "block_order": [
@@ -99,18 +224,25 @@
           "image-bar-1",
           "image-bar-2"
         ],
-        "settings": {}
+        "settings": {
+          "section_height": "small"
+        }
       },
       "footer": {
         "type": "footer",
         "blocks": {
           "footer-0": {
             "type": "link_list",
-            "settings": {}
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
           },
           "footer-1": {
             "type": "newsletter",
-            "settings": {}
+            "settings": {
+              "title": "Newsletter"
+            }
           }
         },
         "block_order": [
@@ -118,13 +250,87 @@
           "footer-1"
         ],
         "settings": {
-          "show_payment_icons": true
+          "show_payment_icons": true,
+          "color_footer_bg": "#f6f6f6",
+          "color_footer_text": "#333232",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "1595649824301": {
+        "type": "slideshow",
+        "blocks": {
+          "1595649824301-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/delicate-hands-using-laptops.jpg",
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": ""
+            }
+          },
+          "1595649824301-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/woman-edits-images-on-her-laptop.jpg",
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1595649824301-0",
+          "1595649824301-1"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 8,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable1": true,
+          "tags_enable": true,
+          "product_sb_placement": "left"
+        }
+      },
+      "collection_fillter": {
+        "type": "collection_fillter",
+        "settings": {}
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": true
+        }
+      },
+      "themeKit": {
+        "type": "themeKit",
+        "settings": {
+          "theme": "shopify:\/\/shop_images\/woman-works-on-computer-at-home.jpg",
+          "theme12": "shopify:\/\/shop_images\/macbook-air-on-desk.jpg"
         }
       }
     },
     "content_for_index": [
-      "hero-1",
+      "1595649824301",
       "feature-row",
+      "hero-1",
       "feature-columns",
       "collection",
       "hero-2",
@@ -374,6 +580,7 @@
           "type": "product-template",
           "settings": {
             "show_quantity_selector": false,
+            "show_variant_labels": true,
             "show_vendor": false,
             "show_share_buttons": true,
             "media_size": "medium",

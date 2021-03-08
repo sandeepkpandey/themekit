@@ -3,15 +3,15 @@
     "accessibility": {
       "skip_to_content": "Перейти к контенту",
       "close_modal": "Закрыть",
-      "refresh_page": "Выбор выделенного элемента приводит к полному обновлению страницы.",
-      "selection_help": "Нажмите клавишу пробела, а затем клавиши со стрелками, чтобы выделить необходимый элемент.",
-      "unit_price_separator": "за",
-      "error": "Ошибка",
       "link_messages": {
         "new_window": "Открывается в новом окне.",
         "external": "Открывает внешний сайт.",
         "new_window_and_external": "Открывает внешний сайт в новом окне."
-      }
+      },
+      "refresh_page": "Выбор выделенного элемента приводит к полному обновлению страницы.",
+      "selection_help": "Нажмите клавишу пробела, а затем клавиши со стрелками, чтобы выделить необходимый элемент.",
+      "unit_price_separator": "за",
+      "error": "Ошибка"
     },
     "meta": {
       "tags": "Помечено \"{{ tags }}\"",
@@ -36,7 +36,8 @@
       "signup_form_email_label": "Электронный адрес",
       "signup_form_success": "Мы отправим вам письмо незадолго до открытия!",
       "admin_link_html": "Вы владелец магазина? <a href=\"\/admin\" class=\"text-link\">Войдите здесь<\/a>",
-      "password_link": "Войдите с помощью пароля"
+      "password_link": "Войдите с помощью пароля",
+      "powered_by_shopify_html": "Этот магазин работает на платформе {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Поделиться",
@@ -50,10 +51,18 @@
     },
     "search": {
       "empty_search_message": "Поле поиска не может быть пустым",
+      "results_with_count": {
+        "one": "Результатов по запросу \"{{ terms }}\": {{ count }}",
+        "other": "Результатов по запросу \"{{ terms }}\": {{ count }}"
+      },
       "title": "Поиск на нашем сайте",
       "placeholder": "Поиск",
       "submit": "Отправить",
       "close": "Закрыть окно поиска",
+      "heading": {
+        "one": "Результат поиска",
+        "other": "Результаты поиска"
+      },
       "no_results": "Проверьте правописание или выберите другие слова.",
       "search_for": "Поиск",
       "products": "Продукты",
@@ -61,19 +70,7 @@
       "clear_search_term": "Удалить поисковой запрос",
       "number_of_results": "{{ result_number }} из {{ results_count }}",
       "number_of_results_found": "Найдено результатов: {{ results_count }}",
-      "one_result_found": "Найден 1 результат",
-      "results_with_count": {
-        "one": "Результатов по запросу \"{{ terms }}\": {{ count }}",
-        "other": "Результатов по запросу \"{{ terms }}\": {{ count }}",
-        "few": "Результатов по запросу \"{{ terms }}\": {{ count }}",
-        "many": "Результатов по запросу \"{{ terms }}\": {{ count }}"
-      },
-      "heading": {
-        "one": "Результат поиска",
-        "other": "Результаты поиска",
-        "few": "Результаты поиска",
-        "many": "Результаты поиска"
-      }
+      "one_result_found": "Найден 1 результат"
     },
     "newsletter_form": {
       "newsletter_email": "Подпишитесь на нашу почтовую рассылку",
@@ -122,9 +119,6 @@
       "pause": "Приостановить видео \"{{ video_title }}\"",
       "resume": "Возобновить воспроизведение видео \"{{ video_title }}\"",
       "close": "Закрыть видео \"{{ video_title }}\""
-    },
-    "header": {
-      "announcement_bar_label": "Объявление"
     }
   },
   "blogs": {
@@ -139,10 +133,9 @@
       "back_to_blog": "Вернуться к {{ title }}",
       "tags": "Теги",
       "article_with_count": {
-        "one": "{{ count }} статья",
-        "other": "Статей: {{ count }}",
-        "few": "Статей: {{ count }}",
-        "many": "Статей: {{ count }}"
+        "zero": "Статей нет",
+        "one": "1 статья",
+        "other": "Статей: {{ count }}"
       }
     },
     "comments": {
@@ -157,9 +150,7 @@
       "unapproved": "Указанный адрес электронной почты не одобрен для размещения комментариев.",
       "comments_with_count": {
         "one": "{{ count }} комментарий",
-        "other": "Комментариев: {{ count }}",
-        "few": "Комментариев: {{ count }}",
-        "many": "Комментариев: {{ count }}"
+        "other": "Комментариев: {{ count }}"
       }
     }
   },
@@ -197,15 +188,13 @@
     },
     "popup": {
       "added_to_cart": "Только что добавлено в корзину",
-      "product_details": "Информация о продукте",
-      "quantity": "Кол-во",
-      "quantity_label": "Количество: {{ quantity_count }}",
       "cart_count": {
         "one": "{{ count }} элемент",
-        "other": "Элементов: {{ count }}",
-        "few": "Элементов: {{ count }}",
-        "many": "Элементов: {{ count }}"
-      }
+        "other": "Элементов: {{ count }}"
+      },
+      "product_details": "Информация о продукте",
+      "quantity": "Кол-во",
+      "quantity_label": "Количество: {{ quantity_count }}"
     }
   },
   "collections": {
@@ -213,13 +202,11 @@
       "view_all": "Посмотреть все",
       "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\"",
       "no_matches": "В этой коллекции нет продуктов",
-      "collection_label": "Коллекция",
       "items_with_count": {
         "one": "{{ count }} продукт",
-        "other": "Продуктов: {{ count }}",
-        "few": "Продуктов: {{ count }}",
-        "many": "Продуктов: {{ count }}"
-      }
+        "other": "Продуктов: {{ count }}"
+      },
+      "collection_label": "Коллекция"
     },
     "catalog": {
       "title": "Каталог"
@@ -370,9 +357,7 @@
       "title": "Корзина",
       "items_count": {
         "one": "товар",
-        "other": "тов.",
-        "few": "тов.",
-        "many": "тов."
+        "other": "тов."
       }
     },
     "customer": {
@@ -422,16 +407,6 @@
       "remaining_html": "Осталось: {{ balance }}",
       "add_to_apple_wallet": "Добавить в Apple Wallet",
       "qr_image_alt": "Отсканируйте QR-код, чтобы использовать подарочную карту"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Сведения о магазине",
-      "check_other_stores": "Проверить наличие в других магазинах",
-      "pick_up_available": "Самовывоз доступен",
-      "pick_up_currently_unavailable": "Самовывоз сейчас недоступен",
-      "pick_up_available_at_html": "Самовывоз доступен: <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Самовывоз сейчас недоступен: <strong>{{ location_name }}<\/strong>"
     }
   }
 }

@@ -36,7 +36,8 @@
       "signup_form_email_label": "E-mail-cím",
       "signup_form_success": "E-mailben értesítünk a nyitás előtt!",
       "admin_link_html": "Te vagy a bolt tulajdonosa? <a href=\"\/admin\" class=\"text-link\">Jelentkezz be itt<\/a>",
-      "password_link": "Belépés jelszóval"
+      "password_link": "Belépés jelszóval",
+      "powered_by_shopify_html": "A bolt szolgáltatója a {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Megosztás",
@@ -118,9 +119,6 @@
       "pause": "{{ video_title }} szüneteltetése",
       "resume": "{{ video_title }} folytatása",
       "close": "{{ video_title }} bezárása"
-    },
-    "header": {
-      "announcement_bar_label": "Közlemény"
     }
   },
   "blogs": {
@@ -135,7 +133,8 @@
       "back_to_blog": "Vissza ide: {{ title }}",
       "tags": "Címkék",
       "article_with_count": {
-        "one": "{{ count }} termék",
+        "zero": "0 cikk",
+        "one": "1 cikk",
         "other": "{{ count }} cikk"
       }
     },
@@ -408,16 +407,6 @@
       "remaining_html": "Elérhető összeg: {{ balance }}",
       "add_to_apple_wallet": "Hozzáadás az Apple Wallethoz",
       "qr_image_alt": "QR-kód – olvasd be az ajándékkártya beváltásához"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Webáruház adatai",
-      "check_other_stores": "Kapható más webáruházakban?",
-      "pick_up_available": "Személyesen átvehető",
-      "pick_up_currently_unavailable": "Személyesen egyelőre nem vehető át",
-      "pick_up_available_at_html": "Személyesen átvehető itt: <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Személyesen egyelőre nem vehető át itt: <strong>{{ location_name }}<\/strong>"
     }
   }
 }

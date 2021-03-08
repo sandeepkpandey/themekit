@@ -36,7 +36,8 @@
       "signup_form_email_label": "E-mel",
       "signup_form_success": "Kami akan menghantar e-mel kepada anda sebelum kami buka!",
       "admin_link_html": "Adakah anda pemilik kedai? <a href=\"\/admin\" class=\"text-link\">Log masuk di sini<\/a>",
-      "password_link": "Masuk menggunakan kata laluan"
+      "password_link": "Masuk menggunakan kata laluan",
+      "powered_by_shopify_html": "Kedai ini akan dikuasakan oleh {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Kongsi",
@@ -118,9 +119,6 @@
       "pause": "Jeda video {{ video_title }}",
       "resume": "Sambungkan semula video {{ video_title }}",
       "close": "Tutup video {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Pengumuman"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "Kembali kepada {{ title }}",
       "tags": "Tag",
       "article_with_count": {
-        "one": "{{ count }} artikel",
-        "other": "{{ count }} artikel"
+        "one": "1 artikel",
+        "other": "{{ count }} artikel",
+        "zero": "0 artikel"
       }
     },
     "comments": {
@@ -408,16 +407,6 @@
       "remaining_html": "{{ balance }} berbaki",
       "add_to_apple_wallet": "Tambah ke Apple Wallet",
       "qr_image_alt": "Kod QR — imbas untuk menebus kad hadiah"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Lihat maklumat kedai",
-      "check_other_stores": "Periksa ketersediaan di kedai lain",
-      "pick_up_available": "Kutipan tersedia",
-      "pick_up_currently_unavailable": "Kutipan tidak tersedia pada masa ini",
-      "pick_up_available_at_html": "Kutipan tersedia di <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Kutipan tidak tersedia pada masa ini di <strong>{{ location_name }}<\/strong>"
     }
   }
 }

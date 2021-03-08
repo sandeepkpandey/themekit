@@ -36,7 +36,8 @@
       "signup_form_email_label": "Sähköposti",
       "signup_form_success": "Lähetämme sinulle sähköpostiviestin juuri ennen avaamista!",
       "admin_link_html": "Oletko kaupan omistaja? <a href=\"\/admin\" class=\"text-link\">Kirjaudu sisään tästä<\/a>",
-      "password_link": "Siirry sisään käyttämällä salasanaa"
+      "password_link": "Siirry sisään käyttämällä salasanaa",
+      "powered_by_shopify_html": "Tämän kaupan alustana on {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Jaa",
@@ -118,9 +119,6 @@
       "pause": "Keskeytä video {{ video_title }}",
       "resume": "Jatka videota {{ video_title }}",
       "close": "Sulje video {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Ilmoitus"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "Takaisin kohteeseen {{ title }}",
       "tags": "Tunnisteet",
       "article_with_count": {
-        "one": "{{ count }} artikkeli",
-        "other": "{{ count }} artikkelia"
+        "one": "1 artikkeli",
+        "other": "{{ count }} artikkelia",
+        "zero": "0 artikkelia"
       }
     },
     "comments": {
@@ -284,7 +283,7 @@
       "order_number_link": "Tilausnumero {{ number }}",
       "date": "Päivämäärä",
       "payment_status": "Maksun tila",
-      "fulfillment_status": "Jakelun tila",
+      "fulfillment_status": "Käsittelyn tila",
       "total": "Yhteensä",
       "none": "Et ole vielä tehnyt tilauksia."
     },
@@ -296,16 +295,16 @@
       "billing_address": "Laskutusosoite",
       "payment_status": "Maksun tila",
       "shipping_address": "Toimitusosoite",
-      "fulfillment_status": "Jakelun tila",
+      "fulfillment_status": "Käsittelyn tila",
       "discount": "Alennus",
       "shipping": "Toimitus",
       "tax": "Vero",
       "product": "Tuote",
-      "sku": "SKU-koodi",
+      "sku": "Varastoyksikkö",
       "price": "Hinta",
       "quantity": "Määrä",
       "total": "Yhteensä",
-      "fulfilled_at_html": "Jaeltu {{ date }}",
+      "fulfilled_at_html": "Huolinta suoritettu {{ date }}",
       "subtotal": "Välisumma",
       "track_shipment": "Seuraa lähetystä"
     },
@@ -408,16 +407,6 @@
       "remaining_html": "{{ balance }} vasen",
       "add_to_apple_wallet": "Lisää Apple Walletiin",
       "qr_image_alt": "QR-koodi – lunasta lahjakortti skannaamalla"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Näytä kaupan tiedot",
-      "check_other_stores": "Tarkista saatavuus muista kaupoista",
-      "pick_up_available": "Nouto saatavilla",
-      "pick_up_currently_unavailable": "Nouto ei ole tällä hetkellä saatavilla",
-      "pick_up_available_at_html": "Nouto saatavilla paikassa <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Nouto ei ole tällä hekellä saatavilla paikassa <strong>{{ location_name }}<\/strong>"
     }
   }
 }

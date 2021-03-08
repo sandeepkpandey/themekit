@@ -26,15 +26,15 @@
     "accessibility": {
       "skip_to_content": "Sari la conținut",
       "close_modal": "Închide",
-      "refresh_page": "Alegerea unei selecții are ca rezultat o reîmprospătare completă a paginii.",
-      "selection_help": "Apasă tasta spațiu, apoi tastele săgeată pentru a face o selecție.",
-      "unit_price_separator": "pe",
-      "error": "Eroare",
       "link_messages": {
         "new_window": "Se deschide într-o fereastră nouă.",
         "external": "Deschide un site extern.",
         "new_window_and_external": "Deschide site-ul extern într-o fereastră nouă."
-      }
+      },
+      "refresh_page": "Alegerea unei selecții are ca rezultat o reîmprospătare completă a paginii.",
+      "selection_help": "Apasă tasta spațiu, apoi tastele săgeată pentru a face o selecție.",
+      "unit_price_separator": "pe",
+      "error": "Eroare"
     },
     "meta": {
       "tags": "Etichetat „{{ tags }}”",
@@ -59,7 +59,8 @@
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Îți vom trimite un e-mail chiar înainte de deschidere!",
       "admin_link_html": "Ești proprietarul magazinului? <a href=\"\/admin\" class=\"text-link\">Conectează-te aici<\/a>",
-      "password_link": "Intră folosind parola"
+      "password_link": "Intră folosind parola",
+      "powered_by_shopify_html": "Acest magazin va fi susținut de {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Distribuie",
@@ -74,27 +75,25 @@
     "search": {
       "no_results": "Încearcă să verifici ortografia sau să folosești cuvinte diferite.",
       "empty_search_message": "Câmpul de căutare nu poate fi gol",
+      "results_with_count": {
+        "one": "{{ count }} rezultat pentru „{{ terms }}”",
+        "other": "{{ count }} rezultate pentru „{{ terms }}”"
+      },
       "title": "Caută pe site-ul nostru",
       "placeholder": "Caută",
       "submit": "Trimite",
       "close": "Închide căutarea",
+      "heading": {
+        "one": "Rezultatul căutării",
+        "other": "Rezultatele căutării"
+      },
       "search_for": "Caută",
       "products": "Produse",
       "loading": "Se încarcă",
       "clear_search_term": "Golește termenul de căutare",
       "number_of_results": "{{ result_number }} din {{ results_count }}",
       "number_of_results_found": "{{ results_count }} rezultate găsite",
-      "one_result_found": "1 rezultat găsit",
-      "results_with_count": {
-        "one": "{{ count }} rezultat pentru „{{ terms }}”",
-        "other": "{{ count }} rezultate pentru „{{ terms }}”",
-        "few": "{{ count }} rezultate pentru „{{ terms }}”"
-      },
-      "heading": {
-        "one": "Rezultatul căutării",
-        "other": "Rezultatele căutării",
-        "few": "Rezultatele căutării"
-      }
+      "one_result_found": "1 rezultat găsit"
     },
     "newsletter_form": {
       "newsletter_email": "Abonează-te-la lista noastră de corespondență",
@@ -143,9 +142,6 @@
       "pause": "Pune în pauză videoclipul {{ video_title }}",
       "resume": "Reia videoclipul {{ video_title }}",
       "close": "Închide videoclipul {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Anunț"
     }
   },
   "blogs": {
@@ -160,9 +156,9 @@
       "back_to_blog": "Înapoi la {{ title }}",
       "tags": "Etichete",
       "article_with_count": {
-        "one": "{{ count }} articol",
-        "other": "{{ count }} articole",
-        "few": "{{ count }} articole"
+        "zero": "0 articole",
+        "one": "1 articol",
+        "other": "{{ count }} articole"
       }
     },
     "comments": {
@@ -177,8 +173,7 @@
       "unapproved": "Adresa de e-mail furnizată nu este aprobată pentru postarea de comentarii.",
       "comments_with_count": {
         "one": "{{ count }} comentariu",
-        "other": "{{ count }} comentarii",
-        "few": "{{ count }} comentarii"
+        "other": "{{ count }} comentarii"
       }
     }
   },
@@ -216,14 +211,13 @@
     },
     "popup": {
       "added_to_cart": "Tocmai adăugat la coș",
-      "product_details": "Detalii produs",
-      "quantity": "Cantitate",
-      "quantity_label": "Cantitate: {{ quantity_count }}",
       "cart_count": {
         "one": "{{ count }} articol",
-        "other": "{{ count }} articole",
-        "few": "{{ count }} articole"
-      }
+        "other": "{{ count }} articole"
+      },
+      "product_details": "Detalii produs",
+      "quantity": "Cantitate",
+      "quantity_label": "Cantitate: {{ quantity_count }}"
     }
   },
   "collections": {
@@ -231,12 +225,11 @@
       "view_all": "Vezi tot",
       "view_all_label": "Vezi toate produsele din colecția {{ collection_name }}",
       "no_matches": "Ne pare rău, nu există produse în această colecție",
-      "collection_label": "Colecție",
       "items_with_count": {
         "one": "{{ count }} produs",
-        "other": "{{ count }} produse",
-        "few": "{{ count }} produse"
-      }
+        "other": "{{ count }} produse"
+      },
+      "collection_label": "Colecție"
     },
     "catalog": {
       "title": "Catalog"
@@ -387,8 +380,7 @@
       "title": "Coș",
       "items_count": {
         "one": "articol",
-        "other": "articole",
-        "few": "articole"
+        "other": "articole"
       }
     },
     "customer": {
@@ -415,16 +407,6 @@
       "remaining_html": "{{ balance }} rămas",
       "add_to_apple_wallet": "Adaugă la Apple Wallet",
       "qr_image_alt": "Cod QR – scanează pentru valorificarea cardului cadou"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Vezi informațiile despre magazin",
-      "check_other_stores": "Vezi disponibilitatea la alte magazine",
-      "pick_up_available": "Ridicare disponibilă",
-      "pick_up_currently_unavailable": "Ridicare indisponibilă momentan",
-      "pick_up_available_at_html": "Ridicare disponibilă la <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Ridicare indisponibilă momentan la <strong>{{ location_name }}<\/strong>"
     }
   }
 }

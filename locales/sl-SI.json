@@ -26,15 +26,15 @@
     "accessibility": {
       "skip_to_content": "Preskoči na vsebino",
       "close_modal": "Zapri",
-      "refresh_page": "Ko izberete elemente, se celotna stran osveži.",
-      "selection_help": "Za izbiro pritisnite preslednico in nato puščične tipke.",
-      "unit_price_separator": "na",
-      "error": "Napaka",
       "link_messages": {
         "new_window": "Odpre se v novem oknu.",
         "external": "Odpre zunanje spletno mesto.",
         "new_window_and_external": "Odpre zunanje spletno mesto v novem oknu."
-      }
+      },
+      "refresh_page": "Ko izberete elemente, se celotna stran osveži.",
+      "selection_help": "Za izbiro pritisnite preslednico in nato puščične tipke.",
+      "unit_price_separator": "na",
+      "error": "Napaka"
     },
     "meta": {
       "tags": "Z oznako »{{ tags }}«",
@@ -59,7 +59,8 @@
       "signup_form_email_label": "E-poštni naslov",
       "signup_form_success": "Tik pred otvoritvijo vam bomo poslali e-pošto.",
       "admin_link_html": "Ali ste lastnik trgovine? <a href=\"\/admin\" class=\"text-link\">Prijavite se tukaj<\/a>",
-      "password_link": "Vstop z geslom"
+      "password_link": "Vstop z geslom",
+      "powered_by_shopify_html": "To trgovino bo omogočala platforma {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Deli",
@@ -74,29 +75,25 @@
     "search": {
       "no_results": "Preverite črkovanje ali uporabite druge besede.",
       "empty_search_message": "Polje za iskanje ne sme biti prazno",
+      "results_with_count": {
+        "one": "{{ count }} rezultat za »{{ terms }}«",
+        "other": "Št. rezultatov za »{{ terms }}«: {{ count }}"
+      },
       "title": "Iščite po našem spletnem mestu",
       "placeholder": "Išči",
       "submit": "Pošlji",
       "close": "Zapri iskanje",
+      "heading": {
+        "one": "Rezultat iskanja",
+        "other": "Rezultati iskanja"
+      },
       "search_for": "Iščite",
       "products": "Izdelki",
       "loading": "Nalaganje",
       "clear_search_term": "Počisti iskalni izraz",
       "number_of_results": "{{ result_number }} od {{ results_count }}",
       "number_of_results_found": "Št. najdenih rezultatov: {{ results_count }}",
-      "one_result_found": "1 najden rezultat",
-      "results_with_count": {
-        "one": "{{ count }} rezultat za »{{ terms }}«",
-        "other": "Št. rezultatov za »{{ terms }}«: {{ count }}",
-        "few": "Št. rezultatov za »{{ terms }}«: {{ count }}",
-        "two": "Št. rezultatov za »{{ terms }}«: {{ count }}"
-      },
-      "heading": {
-        "one": "Rezultat iskanja",
-        "other": "Rezultati iskanja",
-        "few": "Rezultati iskanja",
-        "two": "Rezultati iskanja"
-      }
+      "one_result_found": "1 najden rezultat"
     },
     "newsletter_form": {
       "newsletter_email": "Prijavite se na naš poštni seznam",
@@ -145,9 +142,6 @@
       "pause": "Zaustavi videoposnetek {{ video_title }}",
       "resume": "Nadaljuj videoposnetek {{ video_title }}",
       "close": "Zapri videoposnetek {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Obvestilo"
     }
   },
   "blogs": {
@@ -162,10 +156,9 @@
       "back_to_blog": "Nazaj na {{ title }}",
       "tags": "Oznake",
       "article_with_count": {
-        "one": "{{ count }} članek",
-        "other": "Toliko člankov: {{ count }}",
-        "few": "Toliko člankov: {{ count }}",
-        "two": "Toliko člankov: {{ count }}"
+        "zero": "0 člankov",
+        "one": "1 članek",
+        "other": "Toliko člankov: {{ count }}"
       }
     },
     "comments": {
@@ -180,9 +173,7 @@
       "unapproved": "Naveden e-poštni naslov ni odobren za objavljanje komentarjev.",
       "comments_with_count": {
         "one": "Št. komentarjev: {{ count }}",
-        "other": "Št. komentarjev: {{ count }}",
-        "few": "Št. komentarjev: {{ count }}",
-        "two": "Št. komentarjev: {{ count }}"
+        "other": "Št. komentarjev: {{ count }}"
       }
     }
   },
@@ -220,15 +211,13 @@
     },
     "popup": {
       "added_to_cart": "Pravkar dodano v košarico",
-      "product_details": "Podatki o izdelku",
-      "quantity": "Kol.",
-      "quantity_label": "Količina: {{ quantity_count }}",
       "cart_count": {
         "one": "Št. elementov: {{ count }}",
-        "other": "Št. elementov: {{ count }}",
-        "few": "Št. elementov: {{ count }}",
-        "two": "Št. elementov: {{ count }}"
-      }
+        "other": "Št. elementov: {{ count }}"
+      },
+      "product_details": "Podatki o izdelku",
+      "quantity": "Kol.",
+      "quantity_label": "Količina: {{ quantity_count }}"
     }
   },
   "collections": {
@@ -236,13 +225,11 @@
       "view_all": "Prikaži vse",
       "view_all_label": "Prikaži vse izdelke v zbirki {{ collection_name }}",
       "no_matches": "V tej zbirki žal ni nobenega izdelka",
-      "collection_label": "Zbirka",
       "items_with_count": {
         "one": "Št. izdelkov: {{ count }}",
-        "other": "Št. izdelkov: {{ count }}",
-        "few": "Št. izdelkov: {{ count }}",
-        "two": "Št. izdelkov: {{ count }}"
-      }
+        "other": "Št. izdelkov: {{ count }}"
+      },
+      "collection_label": "Zbirka"
     },
     "catalog": {
       "title": "Katalog"
@@ -393,9 +380,7 @@
       "title": "Košarica",
       "items_count": {
         "one": "element",
-        "other": "elementi",
-        "few": "elementi",
-        "two": "elementi"
+        "other": "elementi"
       }
     },
     "customer": {
@@ -422,16 +407,6 @@
       "remaining_html": "Preostali znesek: {{ balance }}",
       "add_to_apple_wallet": "Dodaj v Apple Wallet",
       "qr_image_alt": "Koda QR – preberite jo za unovčenje darilnega bona"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Prikaži podatke o trgovini",
-      "check_other_stores": "Preverjanje razpoložljivosti v drugih trgovinah",
-      "pick_up_available": "Na voljo je osebni prevzem",
-      "pick_up_currently_unavailable": "Osebni prevzem trenutno ni na voljo",
-      "pick_up_available_at_html": "Osebni prevzem je mogoč na prevzemnem mestu <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Na prevzemnem mestu <strong>{{ location_name }}<\/strong> osebni prevzem trenutno ni mogoč"
     }
   }
 }

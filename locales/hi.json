@@ -36,7 +36,8 @@
       "signup_form_email_label": "ईमेल",
       "signup_form_success": "खुलने से ठीक पहले हम आपको एक ईमेल भेजेंगे!",
       "admin_link_html": "क्या आप स्टोर के मालिक हैं? <a href=\"\/admin\" class=\"text-link\">यहां लॉगिन करें<\/a>",
-      "password_link": "पासवर्ड का उपयोग करके प्रवेश करें"
+      "password_link": "पासवर्ड का उपयोग करके प्रवेश करें",
+      "powered_by_shopify_html": "यह दुकान {{ shopify }} द्वारा संचालित होगी"
     },
     "social": {
       "share_on_facebook": "साझा करें",
@@ -118,9 +119,6 @@
       "pause": "{{ video_title }} वीडियो रोकें",
       "resume": "{{ video_title }} वीडियो फिर से शुरू करें",
       "close": "{{ video_title }} वीडियो बंद करें"
-    },
-    "header": {
-      "announcement_bar_label": "घोषणा"
     }
   },
   "blogs": {
@@ -135,8 +133,9 @@
       "back_to_blog": "{{ title }} पर वापस जाएं",
       "tags": "टैग",
       "article_with_count": {
-        "one": "{{ count }} लेख",
-        "other": "{{ count }} लेख"
+        "one": "1 लेख",
+        "other": "{{ count }} लेख",
+        "zero": "0 लेख"
       }
     },
     "comments": {
@@ -408,16 +407,6 @@
       "remaining_html": "{{ balance }} बचा हैं",
       "add_to_apple_wallet": "Apple Wallet में जोड़ें",
       "qr_image_alt": "QR कोड — गिफ़्ट कार्ड रिडिम करने के लिए स्कैन करें"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "स्टोर की जानकारी देखें",
-      "check_other_stores": "अन्य स्टोर पर उपलब्धता की जांच करें",
-      "pick_up_available": "पिकअप उपलब्ध",
-      "pick_up_currently_unavailable": "वर्तमान में पिकअप अनुपलब्ध है",
-      "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong> पर उपलब्ध पिकअप",
-      "pick_up_unavailable_at_html": "पिकअप वर्तमान में <strong>{{ location_name }}<\/strong> पर अनुपलब्ध"
     }
   }
 }

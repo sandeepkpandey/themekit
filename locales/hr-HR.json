@@ -26,15 +26,15 @@
     "accessibility": {
       "skip_to_content": "Preskoči na sadržaj",
       "close_modal": "Zatvori",
-      "refresh_page": "Ako odaberete izbor, osvježit će se cijela stranica.",
-      "selection_help": "Da biste odabrali, pritisnite razmaknicu, a zatim tipke sa strelicama.",
-      "unit_price_separator": "po",
-      "error": "Greška",
       "link_messages": {
         "new_window": "Otvara se u novom prozoru.",
         "external": "Otvara vanjsko web-mjesto.",
         "new_window_and_external": "Otvara vanjsko web-mjesto u novom prozoru."
-      }
+      },
+      "refresh_page": "Ako odaberete izbor, osvježit će se cijela stranica.",
+      "selection_help": "Da biste odabrali, pritisnite razmaknicu, a zatim tipke sa strelicama.",
+      "unit_price_separator": "po",
+      "error": "Greška"
     },
     "meta": {
       "tags": "Označeno s \"{{ tags }}\"",
@@ -59,7 +59,8 @@
       "signup_form_email_label": "Pošalji e-poruku",
       "signup_form_success": "Poslat ćemo vam poruku e-pošte neposredno prije nego što otvorimo!",
       "admin_link_html": "Jeste li vlasnik trgovine? <a href=\"\/admin\" class=\"text-link\">Prijavite se ovdje<\/a>",
-      "password_link": "Uđite pomoću lozinke"
+      "password_link": "Uđite pomoću lozinke",
+      "powered_by_shopify_html": "Trgovinu pokreće {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Podijelite",
@@ -74,27 +75,25 @@
     "search": {
       "no_results": "Pokušajte provjeriti pravopis ili koristiti druge riječi.",
       "empty_search_message": "Polje za pretraživanje ne može biti prazno",
+      "results_with_count": {
+        "one": "{{ count }} rezultat za \"{{ terms }}\"",
+        "other": "{{ count }} rezultata za \"{{ terms }}\""
+      },
       "title": "Pretraži naše web-mjesto",
       "placeholder": "Traži",
       "submit": "Podnesi",
       "close": "Zatvori pretraživanje",
+      "heading": {
+        "one": "Rezultat pretraživanja",
+        "other": "Rezultati pretraživanja"
+      },
       "search_for": "Traži",
       "products": "Proizvodi",
       "loading": "Učitavanje",
       "clear_search_term": "Očisti pojam za pretraživanje",
       "number_of_results": "{{ result_number }} od {{ results_count }}",
       "number_of_results_found": "Pronađeno rezultata: {{ results_count }}",
-      "one_result_found": "Pronađen je 1 rezultat",
-      "results_with_count": {
-        "one": "{{ count }} rezultat za \"{{ terms }}\"",
-        "other": "{{ count }} rezultata za \"{{ terms }}\"",
-        "few": "{{ count }} rezultata za \"{{ terms }}\""
-      },
-      "heading": {
-        "one": "Rezultat pretraživanja",
-        "other": "Rezultati pretraživanja",
-        "few": "Rezultati pretraživanja"
-      }
+      "one_result_found": "Pronađen je 1 rezultat"
     },
     "newsletter_form": {
       "newsletter_email": "Pretplatite se na naš popis za slanje poruka e-pošte",
@@ -143,9 +142,6 @@
       "pause": "Pauziraj videozapis {{ video_title }}",
       "resume": "Nastavi videozapis {{ video_title }}",
       "close": "Zatvori videozapis {{ video_title }}"
-    },
-    "header": {
-      "announcement_bar_label": "Objava"
     }
   },
   "blogs": {
@@ -160,9 +156,9 @@
       "back_to_blog": "Natrag na {{ title }}",
       "tags": "Oznake",
       "article_with_count": {
-        "one": "Broj artikala: {{ count }}",
-        "other": "Broj artikala: {{ count }}",
-        "few": "Broj artikala: {{ count }}"
+        "zero": "0 artikla",
+        "one": "1 artikl",
+        "other": "Broj artikala: {{ count }}"
       }
     },
     "comments": {
@@ -177,8 +173,7 @@
       "unapproved": "Navedena adresa e-pošte nema odobrenje za objavu komentara.",
       "comments_with_count": {
         "one": "{{ count }} komentar",
-        "other": "{{ count }} komentara",
-        "few": "{{ count }} komentara"
+        "other": "{{ count }} komentara"
       }
     }
   },
@@ -216,14 +211,13 @@
     },
     "popup": {
       "added_to_cart": "Upravo je dodano u vašu košaricu",
-      "product_details": "Detalji o proizvodu",
-      "quantity": "Kol.",
-      "quantity_label": "Količina: {{ quantity_count }}",
       "cart_count": {
         "one": "{{ count }} artikl",
-        "other": "Broj artikala: {{ count }}",
-        "few": "Broj artikala: {{ count }}"
-      }
+        "other": "Broj artikala: {{ count }}"
+      },
+      "product_details": "Detalji o proizvodu",
+      "quantity": "Kol.",
+      "quantity_label": "Količina: {{ quantity_count }}"
     }
   },
   "collections": {
@@ -231,12 +225,11 @@
       "view_all": "Prikaži sve",
       "view_all_label": "Prikaži sve proizvode u kolekciji {{ collection_name }}",
       "no_matches": "Nažalost, u ovoj kolekciji nema proizvoda",
-      "collection_label": "Kolekcija",
       "items_with_count": {
         "one": "{{ count }} proizvod",
-        "other": "{{ count }} proizvoda",
-        "few": "{{ count }} proizvoda"
-      }
+        "other": "{{ count }} proizvoda"
+      },
+      "collection_label": "Kolekcija"
     },
     "catalog": {
       "title": "Katalog"
@@ -387,8 +380,7 @@
       "title": "Košarica",
       "items_count": {
         "one": "artikl",
-        "other": "artikli",
-        "few": "artikli"
+        "other": "artikli"
       }
     },
     "customer": {
@@ -415,16 +407,6 @@
       "remaining_html": "preostalo: {{ balance }}",
       "add_to_apple_wallet": "Dodajte u novčanik Apple Wallet",
       "qr_image_alt": "QR kôd – skenirajte da biste iskoristili poklon karticu"
-    }
-  },
-  "store_availability": {
-    "general": {
-      "view_store_info": "Pogledaj informacije o trgovini",
-      "check_other_stores": "Provjeri dostupnost u drugim trgovinama",
-      "pick_up_available": "Dostupno je preuzimanje",
-      "pick_up_currently_unavailable": "Preuzimanje trenutno nije dostupno",
-      "pick_up_available_at_html": "Preuzimanje je dostupno na lokaciji <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Preuzimanje trenutno nije dostupno na lokaciji <strong>{{ location_name }}<\/strong>"
     }
   }
 }
