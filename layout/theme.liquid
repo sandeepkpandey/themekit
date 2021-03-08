@@ -125,9 +125,16 @@
 
   {%- if settings.enable_ajax -%}
     {% include 'cart-popup' %}
+<<<<<<< HEAD
+  {%- endif -%}
+
+  {% section 'header' %}
+  <h1>This is added new comment.</h1>
+=======
   {%- endif -%} 
   {% comment %}{% section 'header' %} {% endcomment%}
 
+>>>>>>> first_repo/master
   <div class="page-container drawer-page-content" id="PageContainer">
 
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
@@ -149,6 +156,9 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
+<<<<<<< HEAD
+  <div class="repo">This is test repo dive.</div>
+=======
 {% render 'spurit_po2_theme_snippet' %}
 <!-- Begin ReCharge code -->
 {% include 'subscription-theme-footer' %}
@@ -159,5 +169,6 @@
 <!-- End Back in Stock helper snippet -->
 {% render 'GPO_script' %}
 <h2>This is simple text for debut_test.</h2>
+>>>>>>> first_repo/master
 </body>
 </html>
